@@ -3,6 +3,12 @@
     "name": "MARSHALL",
     "icons": [
         {
+            "src": "/static/images/favicons/favicon-512x512.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
             "src": "/static/images/favicons/apple-icon-57x57.png",
             "sizes": "57x57",
             "type": "image/png"
