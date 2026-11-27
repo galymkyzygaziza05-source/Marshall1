@@ -13,10 +13,10 @@ import { ADMIN_API_URL } from "../enums/EnvironmentVariable";
 import { adminService } from "./AdminService";
 
 export const MetaTagsDefaultValue: RequiredMetaTagsData = {
-    title: "WorkAdventure",
+    title: "MARSHALL",
     description:
-        "Organize your online event in WorkAdventure to recreate spontaneous social interactions. Connect, collaborate and have fun with your teammates and attendees.",
-    author: "WorkAdventure team",
+        "MARSHALL is a shared virtual space to meet, communicate, explore and spend time together.",
+    author: "MARSHALL",
     provider: "WorkAdventure",
     favIcons: [
         {
@@ -32,8 +32,8 @@ export const MetaTagsDefaultValue: RequiredMetaTagsData = {
             type: "image/png",
         },
     ],
-    appName: "WorkAdventure",
-    shortAppName: "WA",
+    appName: "MARSHALL",
+    shortAppName: "MARSHALL",
     themeColor: "#1B2A41",
     cardImage: "https://workadventu.re/images/general/logo-og.png",
 };
