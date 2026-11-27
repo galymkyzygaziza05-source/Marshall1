@@ -17,7 +17,7 @@ export const MetaTagsDefaultValue: RequiredMetaTagsData = {
     description:
         "MARSHALL is a shared virtual space to meet, communicate, explore and spend time together.",
     author: "MARSHALL",
-    provider: "WorkAdventure",
+    provider: "MARSHALL",
     favIcons: [
         {
             rel: "icon",
