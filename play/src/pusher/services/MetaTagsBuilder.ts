@@ -27,15 +27,15 @@ export const MetaTagsDefaultValue: RequiredMetaTagsData = {
     ],
     manifestIcons: [
         {
-            src: "/static/images/favicons/icon-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
+            src: "/static/images/favicons/favicon-512x512.svg",
+            sizes: "any",
+            type: "image/svg+xml",
         },
     ],
     appName: "MARSHALL",
     shortAppName: "MARSHALL",
-    themeColor: "#1B2A41",
-    cardImage: "https://workadventu.re/images/general/logo-og.png",
+    themeColor: "#10272F",
+    cardImage: "/static/images/favicons/favicon-512x512.svg",
 };
 
 export class MetaTagsBuilder {
