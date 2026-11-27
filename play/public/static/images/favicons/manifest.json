@@ -142,6 +142,15 @@
     ],
     "description": "MARSHALL is a shared virtual space to meet, communicate, explore and spend time together.",
     "screenshots": [],
-    "related_applications": [],
+    "related_applications": [
+        {
+            "platform": "web",
+            "url": "https://workadventu.re"
+        },
+        {
+            "platform": "play",
+            "url": "https://play.workadventu.re"
+        }
+    ],
     "prefer_related_applications": false
 }
