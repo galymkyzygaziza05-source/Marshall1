@@ -954,3 +954,67 @@ div.emoji-picker {
     70%  { box-shadow: 0 0 0 calc(var(--username-dom-scale, 1) * 1.5px) rgba(255,240,180, 0.4), 0 0 0 calc(var(--username-dom-scale, 1) * 14px)  rgba(255,240,180, 0); }
     100% { box-shadow: 0 0 0 calc(var(--username-dom-scale, 1) * 1.5px) rgba(255,240,180, 0.4), 0 0 0 calc(var(--username-dom-scale, 1) * 1.5px) rgba(255,240,180, 0); }
 }
+
+
+/* MARSHALL branded entry screen. Keep the upstream login flow and room overrides intact. */
+.marshall-login-brand {
+    z-index: 31;
+    pointer-events: none;
+}
+.marshall-login-logo {
+    width: min(333px, 76vw) !important;
+    height: auto;
+    max-height: 92px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 28px rgb(0 0 0 / 0.28));
+}
+.marshall-login-scene {
+    padding: 112px 18px 28px;
+    box-sizing: border-box;
+}
+.marshall-login-panel {
+    position: relative;
+    z-index: 32;
+    max-width: 520px;
+    padding: clamp(24px, 5vw, 42px);
+    background: linear-gradient(145deg, rgb(13 35 39 / 0.94), rgb(8 24 31 / 0.88));
+    border: 1px solid rgb(66 230 178 / 0.28);
+    box-shadow: 0 24px 80px rgb(0 0 0 / 0.42), inset 0 1px 0 rgb(255 255 255 / 0.08);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+.marshall-login-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #f2fffb;
+    letter-spacing: 0.01em;
+}
+.marshall-login-input {
+    max-width: 100%;
+    min-height: 52px;
+    color: #f5fffc;
+    background: rgb(3 17 23 / 0.72) !important;
+    border-color: rgb(156 200 189 / 0.28) !important;
+    transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+.marshall-login-input::placeholder { color: rgb(214 237 229 / 0.56); }
+.marshall-login-input:focus {
+    border-color: #42e6b2 !important;
+    box-shadow: 0 0 0 3px rgb(66 230 178 / 0.16);
+    outline: none;
+}
+.marshall-login-submit { min-height: 50px; }
+.marshall-login-shade {
+    background: radial-gradient(ellipse at 50% 38%, rgb(8 32 35 / 0.48), rgb(3 12 20 / 0.88));
+    opacity: 1 !important;
+}
+@media (max-height: 650px) {
+    .marshall-login-scene { padding-top: 82px; padding-bottom: 12px; }
+    .marshall-login-logo { max-height: 64px; margin-top: 10px !important; }
+    .marshall-login-panel { padding: 20px; }
+}
+@media (max-width: 480px) {
+    .marshall-login-scene { padding-left: 14px; padding-right: 14px; }
+    .marshall-login-panel { width: 100%; padding: 26px 18px; }
+    .marshall-login-input, .marshall-login-submit { width: 100% !important; }
+}
