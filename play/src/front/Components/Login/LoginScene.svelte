@@ -100,7 +100,7 @@
     <img
         draggable="false"
         src={logo}
-        alt="logo"
+        alt="MARSHALL"
         class="main-logo inline mt-8 {gameManager.currentStartedRoom.loginSceneLogo
             ? 'max-h-[200px] object-cover'
             : ''}"
