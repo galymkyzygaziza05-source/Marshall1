@@ -115,7 +115,7 @@
         }
     ],
     "start_url": "/",
-    "background_color": "#000000",
+    "background_color": "#0B1922",
     "display_override": [
         "window-control-overlay",
         "minimal-ui"
@@ -124,7 +124,7 @@
     "orientation": "portrait-primary",
     "scope": "/",
     "lang": "en",
-    "theme_color": "#000000",
+    "theme_color": "#10272F",
     "shortcuts": [
         {
             "name": "MARSHALL",
