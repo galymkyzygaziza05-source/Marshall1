@@ -1018,3 +1018,26 @@ div.emoji-picker {
     .marshall-login-panel { width: 100%; padding: 26px 18px; }
     .marshall-login-input, .marshall-login-submit { width: 100% !important; }
 }
+
+
+/* MARSHALL onboarding visual identity; all original tutorial interactions remain unchanged. */
+.marshall-onboarding-card {
+    background: linear-gradient(145deg, rgb(13 35 39 / 0.96), rgb(8 24 31 / 0.92));
+    border: 1px solid rgb(66 230 178 / 0.3);
+    box-shadow: 0 22px 70px rgb(0 0 0 / 0.42), inset 0 1px 0 rgb(255 255 255 / 0.08);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+.marshall-onboarding-title {
+    color: #f5fffc;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+}
+.marshall-onboarding-card button[data-testid="onboarding-button-welcome-start"] {
+    background: linear-gradient(110deg, #16a98a, #42e6b2);
+    color: #06251f;
+    box-shadow: 0 8px 24px rgb(22 169 138 / 0.22);
+}
+.marshall-onboarding-card button[data-testid="onboarding-button-welcome-start"]:hover {
+    filter: brightness(1.08);
+}
