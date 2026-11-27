@@ -323,16 +323,6 @@ export class FrontController extends BaseHttpController {
             ],
             description: metaTagsData.description,
             screenshots: [],
-            related_applications: [
-                {
-                    platform: "web",
-                    url: "https://workadventu.re",
-                },
-                {
-                    platform: "play",
-                    url: "https://play.workadventu.re",
-                },
-            ],
         };
 
         res.contentType("application/manifest+json").json(manifest);
