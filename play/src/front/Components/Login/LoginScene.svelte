@@ -96,12 +96,12 @@
     /* eslint-disable svelte/no-at-html-tags */
 </script>
 
-<section class="self-center absolute z-30 top-0 text-center w-full">
+<section class="marshall-login-brand self-center absolute z-30 top-0 text-center w-full">
     <img
         draggable="false"
         src={logo}
         alt="MARSHALL"
-        class="main-logo inline mt-8 {gameManager.currentStartedRoom.loginSceneLogo
+        class="main-logo marshall-login-logo inline mt-8 {gameManager.currentStartedRoom.loginSceneLogo
             ? 'max-h-[200px] object-cover'
             : ''}"
         style="width: 333px;"
@@ -109,7 +109,7 @@
 </section>
 
 <form
-    class="loginScene h-dvh flex flex-col items-center justify-center pointer-events-auto relative z-30"
+    class="loginScene marshall-login-scene h-dvh flex flex-col items-center justify-center pointer-events-auto relative z-30"
     onsubmit={(event) => {
         event.preventDefault();
         submit().catch((error) => {
@@ -117,9 +117,9 @@
         });
     }}
 >
-    <div class="w-full sm:w-96 md:w-10/12 lg:w-1/2 xl:w-1/3 rounded mx-auto text-center p-8">
+    <div class="marshall-login-panel w-full sm:w-96 md:w-10/12 lg:w-1/2 xl:w-1/3 rounded-2xl mx-auto text-center p-8">
         <section class="text-center flex h-fit flex-col justify-center items-center mb-0">
-            <span class="text-white text-lg bold">
+            <span class="marshall-login-label text-white text-lg bold">
                 {$LL.login.input.name.placeholder()}
             </span>
             <!-- svelte-ignore a11y_autofocus -->
@@ -128,7 +128,7 @@
                 name="fname"
                 data-testid="loginSceneNameInput"
                 placeholder={$LL.login.input.name.placeholder()}
-                class="w-52 md:w-96 h-12 text text-center bg-contrast rounded border border-solid border-white/20 mt-4 mb-0"
+                class="marshall-login-input w-52 md:w-96 h-12 text text-center bg-contrast rounded-xl border border-solid border-white/20 mt-4 mb-0"
                 autofocus
                 maxlength={MAX_USERNAME_LENGTH}
                 bind:value={name}
@@ -152,7 +152,7 @@
                 disabled={(name.trim() === "" && startValidating) || errorName !== ""}
                 variant="secondary"
                 size="lg"
-                class="mt-4 w-52 md:w-96 bold text-center block loginSceneFormSubmit"
+                class="marshall-login-submit mt-4 w-52 md:w-96 bold text-center block loginSceneFormSubmit"
             >
                 {$LL.login.continue()}
             </Button>
