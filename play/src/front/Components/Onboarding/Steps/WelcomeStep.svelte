@@ -28,13 +28,13 @@
         : 'fixed top-1/2 -right-10 transform -translate-x-14 -translate-y-1/2'}"
 >
     <div
-        class="bg-contrast/90 backdrop-blur-lg rounded-xl p-4 sm:p-6 w-full max-w-lg shadow-2xl border border-white/20 {$isMobileOnboarding
+        class="marshall-onboarding-card bg-contrast/90 backdrop-blur-lg rounded-xl p-4 sm:p-6 w-full max-w-lg shadow-2xl border border-white/20 {$isMobileOnboarding
             ? 'mx-auto max-h-[70vh] overflow-y-auto'
             : ''}"
         in:fly={{ y: $isMobileOnboarding ? -10 : 10, duration: 400 }}
     >
         <div class="text-center space-y-6">
-            <h2 class="text-3xl font-bold text-white mb-4">
+            <h2 class="marshall-onboarding-title text-3xl font-bold text-white mb-4">
                 {$LL.onboarding.welcome.title({ worldName })}
             </h2>
             <p class="text-lg text-white/90 leading-relaxed">
